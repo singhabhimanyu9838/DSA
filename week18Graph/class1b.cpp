@@ -82,7 +82,7 @@ public:
         cout<<src<<", ";
 
         for(auto nbr : adjList[src]){
-            //nvr -> pair
+            //nbr -> pair
             //first -> node 
             //second -> weight
             int node = nbr.first;
