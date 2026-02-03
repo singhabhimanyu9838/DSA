@@ -86,7 +86,7 @@ class Graph{
                 }
             }
             //while returning , store the node in stack
-            // cout<<"Pushing" << src<<endl;
+            cout<<"Pushing" << src<<endl;
             ans.push(src);
         }
 

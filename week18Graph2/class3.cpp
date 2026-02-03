@@ -54,6 +54,8 @@ class Graph{
             }
         }
 
+        //Kosaraju Algorithm -> Strongly Connected Component (SCC)
+
         int countSCC(int n){
             //find topoOrdering
             stack<int>s;
