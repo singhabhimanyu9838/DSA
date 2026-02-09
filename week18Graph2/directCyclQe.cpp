@@ -1,22 +1,22 @@
 class Solution {
   public:
   
-//GFG -> Safe States (question)
-//using Cycle detection logic in directed graph
+    //GFG -> Safe States (question)
+    //using Cycle detection logic in directed graph
 
 
   bool checkCycle(unordered_map<int , list<int>>&adj , int src , unordered_map<int , bool>&visited , 
-     unordered_map<int , bool>&dfsVisited , int safenodes[]){
+         unordered_map<int , bool>&dfsVisited , int safenodes[]){
          visited[src] = true;
          dfsVisited[src] = true;
          safenodes[src] = 0;
          for(auto nbr  : adj[src]){
-             if(!visited[nbr]){
+            if(!visited[nbr]){
                  bool aagekaAns = checkCycle(adj , nbr , visited , dfsVisited , safenodes);
                  if(aagekaAns )return true;
-             }
+            }
              if(visited[nbr] == true && dfsVisited[nbr] == true)return true;
-         }
+        }
          
          dfsVisited[src] = false;
          safenodes[src] = 1;
