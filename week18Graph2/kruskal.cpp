@@ -3,6 +3,7 @@ class Solution {
         return a[2] < b[2];
     } 
   public:
+  
     int findParent(vector<int>&parent  , int node ){
         if(parent[node] == node){
             return node;
@@ -23,8 +24,7 @@ class Solution {
             parent[v] = u;
             rank[u]++;
         }
-    }
-       
+    }   
   
     int spanningTree(int V, vector<vector<int>>& edges) {
          
